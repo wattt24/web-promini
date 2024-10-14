@@ -1,0 +1,153 @@
+form div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+label {
+    font-size: 16px;
+    font-weight: 600;
+    color: #34495e;
+}
+
+input[type="text"], input[type="number"], select {
+    padding: 12px;
+    border: 1px solid #dcdfe6;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 100%;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="number"]:focus, select:focus {
+    border-color: #4CAF50;
+    outline: none;
+    box-shadow: 0 4px 8px rgba(0, 128, 0, 0.1);
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+form {
+    width: 40%; /* ปรับความกว้างของฟอร์ม */
+    margin: 0; /* ลบช่องว่างด้านบนและด้านล่าง */
+}
+
+ul {
+    list-style-type: none; /* ลบสัญลักษณ์ลิสต์ */
+    padding: 0; /* ลบ padding */
+    width: 40%; /* ปรับความกว้างของ ul ให้เหมาะสม */
+    margin: 0; /* ลบ margin */
+}
+
+h4 {
+    font-size: 22px;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    clear: both; /* ทำให้ฟอร์มและรายการไม่ทับกัน */
+    margin-top: 40px; /* เพิ่มช่องว่างด้านบน */
+}
+
+
+ul {
+    list-style-type: none;
+    padding: 20;
+    float: right; /* ย้ายรายการสัตว์เลี้ยงไปทางขวาของหน้าจอ */
+    width: 40%; /* ปรับความกว้างของ ul ให้เหมาะสม */
+    margin-top: 20px; /* เพิ่มช่องว่างด้านบน */
+}
+
+ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f9f9f9;
+    padding: 20px 70px; /* เพิ่มความสูงของ padding เพื่อให้ช่องยาวขึ้น */
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    min-height: 60px; /* กำหนดความสูงขั้นต่ำของแต่ละรายการ */
+    width: 100%; /* ใช้พื้นที่ว่างทั้งหมดของ ul */
+    flex-grow: 1; /* ให้แต่ละรายการขยายเต็มที่ตามความกว้างที่มี */
+}
+
+
+ul li input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+ul li button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+ul li button:hover {
+    background-color: #e63946;
+}
+
+ul li button:nth-child(2) {
+    background-color: #3498db;
+    margin-left: 10px;
+}
+
+ul li button:nth-child(2):hover {
+    background-color: #2980b9;
+}
+
+
+form {
+    width: 40%;
+    float: left; /* ทำให้ฟอร์มอยู่ทางซ้ายของหน้าจอ */
+}
+
+#back-button {
+    background-color: #45a049; /* สีพื้นหลังของปุ่ม */
+    color: white; /* สีของข้อความ */
+    padding: 12px 20px; /* ระยะห่างภายในปุ่ม */
+    border: none; /* ไม่มีกรอบ */
+    border-radius: 8px; /* ขอบมน */
+    font-size: 16px; /* ขนาดฟอนต์ */
+    cursor: pointer; /* เปลี่ยนเคอร์เซอร์เมื่อชี้ที่ปุ่ม */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* เพิ่มเอฟเฟกต์เมื่อชี้ */
+    margin-top: 20px; /* เพิ่มช่องว่างด้านบน */
+    display: block; /* ทำให้ปุ่มเป็นบล็อก */
+    margin-left: auto; /* ปรับช่องว่างด้านซ้าย */
+    margin-right: auto; /* ปรับช่องว่างด้านขวา */
+}
+
+#back-button:hover {
+    background-color: #45a049; /* สีพื้นหลังเมื่อชี้ที่ปุ่ม */
+    transform: scale(1.05); /* ขยายขนาดปุ่มเล็กน้อยเมื่อชี้ */
+}
+
+#back-button:focus {
+    outline: none; /* ไม่มีกรอบเมื่อปุ่มได้รับโฟกัส */
+    box-shadow: 0 0 5px #45a049; /* เอฟเฟกต์เงาเมื่อปุ่มได้รับโฟกัส */
+}
+
+.container {
+    display: flex; /* ใช้ Flexbox สำหรับการจัดตำแหน่ง */
+    justify-content: center; /* จัดตำแหน่งกลางในแนวนอน */
+    align-items: center; /* จัดตำแหน่งกลางในแนวตั้ง */
+    height: 100vh; /* ความสูงของ container ให้เต็มหน้าจอ */
+    flex-direction: column; /* แนวตั้ง */
+}
